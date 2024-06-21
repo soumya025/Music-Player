@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decorative Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-page" class="page">
+        <div class="container">
+            <h1>Login</h1>
+            <input type="text" id="phoneNumber" placeholder="Enter your phone number...">
+            <button onclick="login()">Login</button>
+        </div>
+    </div>
+    
+    <div id="main-page" class="page hidden">
+        <div class="container">
+            <h1>Music Player</h1>
+            <input type="text" id="songSearch" placeholder="Enter YouTube video ID or URL...">
+            <button onclick="playSong()">Play</button>
+            <button onclick="redirectToYouTube()">Play on YouTube</button>
+            <div id="player"></div>
+        </div>
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+</body>
+</html>
